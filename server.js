@@ -4,7 +4,7 @@ const app = express();
 const path = require('path');
 const fetch = require("node-fetch");
 
-const PORT = 8080;
+const PORT = process.env.PORT || 3000;
 
 // Data Parsing
 app.use(express.urlencoded({
@@ -61,4 +61,4 @@ app.get('/', (req, res) => {
   res.render('index.html');
 });
 
-app.listen(PORT, () => console.log('Server is starting on PORT, ', 8080));
+app.listen(PORT, () => console.log('Server is starting on PORT, ', 3000));
