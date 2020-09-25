@@ -3,15 +3,15 @@ var nodemailer = require('nodemailer');
 var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'saxena1975sanjeev@gmail.com',
-    pass: 'SAXENA1974'
+    user: 'rashmisaxena25796@gmail.com',
+    pass: 'rubijohari'
   }
 });
 
 const sendMail = (childName, childAge, parentName, contactPrefix,
   contactNumber, email, courseName, dateForTrial, timeForTrial) => {
   const mailOptions = {
-    from: 'saxena1975sanjeev@gmail.com',
+    from: 'rashmisaxena25796@gmail.com',
     to: email,
     subject: 'Booking for the Trial Class',
     text: `Dear ${parentName},
